@@ -2,6 +2,7 @@ import sys
 import random
 from PySide6 import QtCore, QtWidgets, QtGui
 from PySide6.QtCore import Slot
+from qt_material import apply_stylesheet
 
 
 class LogicGeneratorWidget(QtWidgets.QWidget):
@@ -20,7 +21,8 @@ class Window(QtWidgets.QWidget):
 
         layout = QtWidgets.QGridLayout()
         self.setLayout(layout)
-        self.setStyleSheet(open('resources/main_style.css', 'r').read())
+        # self.setStyleSheet(open('resources/main_style.qss', 'r').read())
+        apply_stylesheet(app, 'dark_purple.xml')
 
         button = QtWidgets.QPushButton("Man press me")
         button.clicked.connect(lambda: print('hello'))
