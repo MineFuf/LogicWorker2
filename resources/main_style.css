@@ -1,0 +1,13 @@
+QPushButton {
+    background: cyan;
+    border: gray dashed 2px;
+    border-radius: 5px;
+    margin: 10px;
+}
+QPushButton:hover {
+    background: yellow;
+    transition: 5s;
+}
+QPushButton:active {
+
+}
