@@ -1,3 +1,6 @@
 .venv
 github_tests
 .idea
+compile_ui.ps1
+venv
+*/__pycache__/*
